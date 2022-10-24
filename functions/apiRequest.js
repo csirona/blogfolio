@@ -1,0 +1,35 @@
+import {useState, useEffect} from "react";
+
+
+export default function APIRequest() {
+
+  const baseURL = "http://127.0.0.1:5000/api/v1/posts";
+  const [posts, setPost] = useState();
+
+  const fetchApi = async () => {
+    const response = await fetch(baseURL)
+    const responseJSON = await response.json()
+    setPost(responseJSON.posts)
+    console.log(responseJSON.posts)
+
+  }
+  console.log(posts)
+  
+  useEffect(() => {
+    fetchApi()
+  },[]);
+   return (
+     <div>
+         { !posts ? 'Loading... ':
+           posts.map( (post)=>{
+             return <div className="bg-slate-700 p-3 mb-5">
+             <p className="text-3xl">{post.tite}</p>
+             <div className="text-sm">{post.created_at}</div>
+             <p className="text-base">{post.content}</p>
+         </div>
+           })
+         }
+           
+    </div>
+  )
+}

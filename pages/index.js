@@ -23,7 +23,7 @@ export default function Home() {
                                 {one}
                                 
                             </h1>
-                            <p className="text-4xl">I'm </p><p className="font-semibold text-4xl"> Cristian Osorio</p>
+                            <p className="text-4xl">I am </p><p className="font-semibold text-4xl"> Cristian Osorio</p>
                             <p className="text-3xl">Web Developer</p>
                             <p className="mb-5">I love exploring and creating. Chasing my dreams. Always I want to be better than the person I was in the morning.</p>
                             <button className="btn btn-primary">Know more about me</button>

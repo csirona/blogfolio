@@ -12,7 +12,7 @@ const Bio = () => {
 
                 <div className="card lg:card-side bg-base-100 shadow-xl">
                     <div className="container mask mask-decagon">
-                    <figure><Image src={perfil} alt="perfil" intrinsic="true"
+                    <figure><Image src={prof} alt="perfil" intrinsic="true"
                     /></figure>
                     </div>
                     <div className="card-body">

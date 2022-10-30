@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 
 export default function APIRequest() {
 
-  const baseURL = "http://188.166.114.7/api/post/";
+  const baseURL = "https://grafibook.cl/api/post/";
   const [posts, setPost] = useState();
 
   const fetchApi = async () => {

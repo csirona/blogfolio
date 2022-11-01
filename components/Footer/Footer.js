@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import rock from "../../assets/images/rock_gesture_icon.png"
+import Link from "next/link";
 const Footer =() =>{
 
   const [imagen, setImagen] = useState('')
@@ -17,11 +18,11 @@ const Footer =() =>{
           </div> 
           <div>
             <span className="footer-title">Links</span> 
-            <a className="link link-hover">GitHub</a> 
-            <a className="link link-hover">LinkedIn</a> 
+            <Link href="https://github.com/csirona" className="link link-hover">GitHub</Link> 
+            <Link href="https://www.linkedin.com/in/cristian-osorio-srna/" className="link link-hover">LinkedIn</Link> 
             <a className="link link-hover">Twitter</a> 
 
-            <a className="link link-hover">Buy Me a Coffe</a> 
+            <Link href="https://www.buymeacoffee.com/cristianosorio" className="link link-hover">Buy Me a Coffe</Link> 
           </div> 
 
    

@@ -21,9 +21,9 @@ const Coffe =() => {
                     <div className="container flex flex-col px-10 ">
                         <p className="text-3xl">Also we can share a coffe!</p>
                         <p className="text-lg">Have a small chat is a good way to spend time.</p>
-                        <p className="text-base">I will be always gratefull for your coffe</p>
+                        <p className="text-base">I will be always gratefull for  coffe</p>
                         <div>
-                            <button className="btn btn-outline mt-5"><Link href="https://www.buymeacoffee.com/cristianosorio">BuyMe a coffe</Link></button>
+                            <button className="btn btn-outline mt-5"><Link href="https://www.buymeacoffee.com/cristianosorio">Buy me a coffe</Link></button>
                         </div>
                     </div>
                 </div>

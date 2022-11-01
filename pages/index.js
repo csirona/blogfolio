@@ -33,7 +33,7 @@ export default function Home() {
             </div>
 
 
-            <div className="flex flex-col w-full mt-10">
+            <div className="flex bg-slate-900 flex-col w-full mt-10">
                 <Bio/>
                 <div className="divider"></div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {useState, useEffect} from "react";
 
 
@@ -21,9 +22,14 @@ export default function APIRequest() {
      <div>
          { !posts ? 'Loading... ':
            posts.map( (post)=>{
-             return <div className="bg-slate-700 p-3 mb-5">
+             return <div className="bg-slate-700 p-3 mb-5 flex-col ml-10">
              <p className="text-3xl">{post.title}</p>
              <div className="text-sm">{post.created_at}</div>
+             <div className="badge badge-primary m-5">{post.tag}</div>
+             <div className='mb-3'> 
+             <Link href={post.gitlink} ><a className='link'>Link to github</a></Link>
+             </div>
+            
              <p className="text-base">{post.content}</p>
          </div>
            })

@@ -1,9 +1,10 @@
+import Link from "next/link";
 import {useState, useEffect} from "react";
 
 
 export default function GetAbout() {
 
-  const baseURL = "http://127.0.0.1:8000/api/cat/about";
+  const baseURL = "https://grafibook.cl/api/cat/about";
   const [posts, setPost] = useState();
 
   const fetchApi = async () => {
@@ -19,13 +20,15 @@ export default function GetAbout() {
   },[]);
    return (
      <div>
-         { !posts ? 'Loading... ':
+         { !posts ? 'loading ...':
            posts.map( (post)=>{
              return <div className="bg-slate-700 p-3 mb-5">
              <p className="text-3xl">{post.title}</p>
              <div className="text-sm">{post.created_at}</div>
-             <p className="text-base">{post.content}</p>
-         </div>
+             <div className='m-5'>
+              <Link href={{pathname:post.gitlink}}><a className="link link-info ">Link to repository</a></Link>
+              </div>             <p className="text-base">{post.content}</p>
+            </div>
            })
          }
            

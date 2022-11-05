@@ -1,5 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
 import {useState, useEffect} from "react";
-
+import cod from '../assets/images/coding.jpg'
 
 export default function GetProjects() {
 
@@ -19,28 +21,26 @@ export default function GetProjects() {
   },[]);
    return (
      <div>
-         { !project ? 'Loading... ':
+         { !project ? <div className="spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0 text-blue-600" role="status">
+    <span className="visually-hidden">Loading...</span>
+  </div>:
            project.map( (post,index)=>{
-                return  <div key={index+1} className="grid grid-flow-rows grid-cols-2 gap-4 px-20 m-10">
-                            <div key={index+2} className="grid  card bg-base-300 rounded-box place-items-center">
-                                <div key={index+3} className="card w-96 bg-base-100 shadow-xl">
-                                <div key={index+4}className="card-body">
-                                        <h2 key={index +5}className="card-title">
-                                            {post.title}
-                                        <div key={index+7}className="badge badge-secondary">NEW</div>
-                                        </h2>
-                                        <p key={index+9}>{post.description}</p>
-                                    <div key={index+10}className="card-actions justify-end">
-                                    <div key={index+11}className="badge badge-outline">{post.tag}</div>
-                                    </div>
-                                    </div>
-                                </div>
+                return  <div key={index.toString()+'a'} className="max-w-md mx-auto bg-slate-700 rounded-xl shadow-md overflow-hidden md:max-w-2xl p-10 mb-10">
+                          <div key={index.toString()+'b'} className="md:flex">
+                            <div key={index.toString()+'c'} className="md:shrink-0">
+                             
                             </div>
-                            <div key={index+13} className="container p-5">
-                                    <div key={index+14} className="text-xl font-medium p-5">{post.title}</div>
-                                    <p className="text-base">{post.content}</p>
-                                </div>
-                    </div>
+                            <div key={index.toString()+'e'} className="p-8">
+                              <p key={index.toString()+'f'} className="uppercase tracking-wide text-bg text-emerald-300 underline decoration-indigo-500 font-semibold">{post.title}</p>
+                              <a key={index.toString()+'g'}href="#" className="block mt-1 text-lg leading-tight font-medium text-white hover:underline">{post.description}</a>
+                              <div key={index.toString()+'h'} className=" hidden sm:block badge badge-outline m-5">{post.tag}</div>
+                              <div>
+                              <Link  key={index.toString()} href={{pathname:post.gitlink}}><a className="link link-info m-5">Link to repository</a></Link>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                 
                     })
          }

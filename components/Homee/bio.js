@@ -8,7 +8,7 @@ const Bio = () => {
     useEffect(() => setPerfil(prof), [])
     return (
         <>
-            <div className="grid  card bg-base-300 rounded-box place-items-center p-20">
+            <div className="grid  card bg-base-300 rounded-box place-items-center sm:p-20">
 
                 <div className="card lg:card-side bg-base-100 shadow-xl">
                     <div className="container mask mask-decagon p-5">

@@ -7,9 +7,9 @@ import Link from "next/link";
 const Coffe =() => {
     return(
         <>
-        <div className="container flex flex-row px-20">
+        <div className="container flex flex-row sm:px-20">
                     <div className="flex  mb-10 card bg-base-300 rounded-box place-items-start">
-                        <div className="mx-5 mask mask-squircle bg-slate-100 p-5">
+                        <div className="mx-5 mask mask-squircle bg-slate-100 p-5 hidden sm:block">
                             <Image src={coffe}
                                 width="150px"
                                 height="150px"

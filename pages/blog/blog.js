@@ -11,15 +11,18 @@ export default function Blog() {
     return (
         <>
             <NavBar/>
+            <div className="container flex justify-content flex-col ">
             <div className="container m-10 text-center ">
                 <p className="text-3xl">My Blog</p>
             </div>
-            <div className="grid grid-cols-1 gap-4 m-10">
-            <div>
+            
+            <div >
     <APIRequest/>
 </div>
              
+           
             </div>
+            
 
 
 

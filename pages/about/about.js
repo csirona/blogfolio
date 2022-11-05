@@ -6,22 +6,15 @@ import GetAbout from "../../functions/getAbout";
 const About = () => {
     return (<>
         <NavBar/>
-        <div className="container flex justify-content flex-col text-center ">
-            <div className="m-10">
-                <p className="text-3xl font-bold">This is an about</p>
+        <div className="container flex justify-content flex-col  ml-10">
+            <div className="m-10 text-center">
+                <p className="text-3xl font-bold">About Me</p>
             </div>
+            <div>
             <GetAbout/>
-            <div className="stack">
-                <div className="text-center border border-base-content card w-36 bg-base-100">
-                    <div className="card-body">A</div>
-                </div>
-                <div className="text-center border border-base-content card w-36 bg-base-100">
-                    <div className="card-body">B</div>
-                </div>
-                <div className="text-center border border-base-content card w-36 bg-base-100">
-                    <div className="card-body">C</div>
-                </div>
             </div>
+            
+
         </div>
         <Footer/>
     </>)

@@ -25,9 +25,7 @@ export default function GetAbout() {
              return <div className="bg-slate-700 p-3 mb-5">
              <p className="text-3xl">{post.title}</p>
              <div className="text-sm">{post.created_at}</div>
-             <div className='m-5'>
-              <Link href={{pathname:post.gitlink}}><a className="link link-info ">Link to repository</a></Link>
-              </div>             <p className="text-base">{post.content}</p>
+             <p className="text-base bg-slate-800">{post.content}</p>
             </div>
            })
          }

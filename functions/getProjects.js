@@ -31,11 +31,14 @@ export default function GetProjects() {
                              
                             </div>
                             <div key={index.toString()+'e'} className="p-8">
-                              <p key={index.toString()+'f'} className="uppercase tracking-wide text-bg text-emerald-300 underline decoration-indigo-500 font-semibold">{post.title}</p>
-                              <a key={index.toString()+'g'}href="#" className="block mt-1 text-lg leading-tight font-medium text-white hover:underline">{post.description}</a>
+                              <p key={index.toString()+'f'} className="uppercase tracking-wide text-2xl text-emerald-300 underline decoration-indigo-500 font-bold">{post.title}</p>
+                              <p key={index.toString()+'g'} className="block mt-1 text-lg leading-tight font-medium text-white hover:underline">{post.description}</p>
                               <div key={index.toString()+'h'} className=" hidden sm:block badge badge-outline m-5">{post.tag}</div>
                               <div>
                               <Link  key={index.toString()} href={{pathname:post.gitlink}}><a className="link link-info m-5">Link to repository</a></Link>
+                              </div>
+                              <div className='container flex justify-center mt-5'>
+                                <Link href={'/blog/'+`${post.id}`}><a className="btn">See more...</a></Link>
                               </div>
 
                             </div>

@@ -23,14 +23,17 @@ export default function APIRequest() {
          { !posts ? 'Loading... ':
            posts.map( (post)=>{
              return <div className="bg-slate-700 p-3 mb-5 flex-col ml-10">
-             <p className="text-3xl">{post.title}</p>
-             <div className="text-sm">{post.created_at}</div>
+              <Link href={'/blog/'+`${post.id}`}><a className="text-3xl ">{post.title}</a></Link>
+             <div className="text-sm ">{post.created_at}</div>
+             <div className="container flex flex-row justify-around">
              <div className="badge badge-primary m-5">{post.tag}</div>
              <div className='mb-3'> 
              <Link href={post.gitlink} ><a className='link'>Link to github</a></Link>
              </div>
+             </div>
+             
             
-             <p className="text-base">{post.content}</p>
+             <p className="text-base bg-slate-800">{post.content}</p>
          </div>
            })
          }

@@ -26,7 +26,7 @@ export default function Home() {
                             </h1>
                             <p className="text-4xl">I am </p><p className="font-semibold text-4xl"> Cristian Osorio</p>
                             <p className="text-3xl">Web Developer</p>
-                            <p className="my-5">Making, exploring, and seeking something that blows my mind. Any idea could be code, so let's code  </p>
+                            <p className="my-5">Making, exploring, and seeking something that blows my mind. Any idea could be code, so lets code  </p>
                             
                             <Link href='/about/about'><button className="btn btn-primary">Know more about me</button></Link>
                         </div>

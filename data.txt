@@ -1,0 +1,69 @@
+[{
+    "id": 2,
+    "title": "API to BlogFolio",
+    "content": "FastAPI project, actually it is deploy on a droplet of DigitalOcean (grafibook.cl/api/post). The API is connected to a MySQL database",
+    "description": "Project to handle data for BlogFolio site"
+    "section": "project",
+    "tag": "FastAPi MySQL Python",
+    "gitlink": "https://github.com/csirona/fastapi-blogfolio"
+  },
+  {
+    "id": 2,
+    "title": "Inventario",
+    "content": "Someone needed a sistem to handle all items bought in a school. So in this project you can save items with a unique id to track it. The item could be store in a place, deactivate its state, generate a qr code and some others options. Also it allow download excel files to work with that.",
+    "description": "Project to make inventory and have a record and stock of any item",
+    "created_at": "2022-11-01",
+    "section": "project",
+    "tag": "Django Bootstrap Python SQL",
+    "gitlink": "https://github.com/csirona/inv20"
+  },
+  {
+    "id": 3,
+    "title": "Random PokeAPI Battle",
+    "content": "I just wanted to use, or at least simplify, the damage formula from the third generation of Pokemon for this project. Additionally, practicing some object-oriented programming is always a good idea. I really enjoy writing code in Python, however occasionally a request in Python takes too long, thus it might be better to use Javascript for HTTP requests. This project consists of classes (trainer, Pokemon, move, and item) each with its own attributes. These properties are set using information from the PokeAPI. Although there is still no interface, the aim is to use the PokeAPI's pictures and other features.",
+    "description": "Who does not like battle pokemon? You can use randoms Pokemons to defeat Gary in this OOP Python project using the PokeAPI.",
+    "created_at": "2022-11-01",
+    "section": "project",
+    "tag": "Python - Http - PokeAPI",
+    "gitlink": "https://github.com/csirona/randomPokeBattle"
+  },
+  {
+    "title": "BlogFolio",
+    "content": "I just needed a site with my own domain to show my projects, also it is a good way to organizate and keep active my ideas. Maybe I could use this as a blog too, write is a good excersise. Actually the option to scalate this site is high, so let's see what happen whit this blogfolio",
+    "description": "WebSite to show my projects, maybe write some thoughts ",
+    "created_at": "2022-11-01",
+    "section": "project",
+    "tag": "NextJs Tailwind DaisyUI Yarn",
+    "gitlink": "https://github.com/csirona/blogfolio"
+  },
+  {
+    "id": 6,
+    "title": "System for manage time in a restaurant",
+    "content": "This project was thinking in first time to collect data and make a machine learning proyect of friends. The machine learning code has to predict order's time. Therefore the goal was have an estimated time and real time",
+    "description": "System of orders to organizate a restaurant",
+    "created_at": "2022-11-01",
+    "section": "project",
+    "tag": "Django Python Postgres Bootstrap",
+    "gitlink": "https://github.com/csirona/kai-sushi"
+  },
+  {
+    "id": 7,
+    "title": "Who am I?",
+    "content": "From Concepción Chile, Web Developer currently studying Informatics Engineering and self taught. Jumping into sistems, servers and web3. I think maths and abstract things are fun. My first language is Spanish but I can use English to work. I have knowledge in python, go, JavaScript with their respective frameworks, also APIs. Relationals Databases and NoSQL. Those things has been applied in different projects.",
+    "description": "know about me",
+    "created_at": "2022-11-01",
+    "section": "about",
+    "tag": "about",
+    "gitlink": "https://github.com/csirona/csirona"
+  },
+  {
+    "id": 9,
+    "title": "ToDO App in React",
+    "content": "I always have prefered backend than frontend. So learn tools to make a better design is important like tailwind. In this case I need to practice more about ReactJs",
+    "description": "Small React-based ToDo application",
+    "created_at": "2022-11-01",
+    "section": "project",
+    "tag": "React npm",
+    "gitlink": "https://github.com/csirona/TodoList_react"
+  }
+]

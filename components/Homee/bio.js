@@ -18,7 +18,7 @@ const Bio = () => {
                     </div>
                     <div className="card-body bg-slate-700	">
                         <p className="text-4xl">Who I am ?</p>
-                        <p>Right now I am probably coding, playing bass, watching a football game, or trying to learn Japanese right now. But I am always listening to music.</p>
+                        <p>Right now I am probably coding, playing bass, watching a football match or trying to speak Japanese. But I am always listening to music.</p>
                         <div className="card-actions justify-end">
                             <p>My spotify list  </p>
                             <Link href="https://open.spotify.com/playlist/1uFNBuHlxB9BhmqPzZnO2p?si=RWgDzt12R-K9JbUl3TNYzA&utm_source=copy-link"><a className="btn btn-primary">Listen</a></Link>

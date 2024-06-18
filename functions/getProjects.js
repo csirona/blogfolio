@@ -5,7 +5,7 @@ import cod from '../assets/images/coding.jpg'
 
 export default function GetProjects() {
 
-  const baseURL = "https://grafibook.cl/api/cat/project";
+  const baseURL = "https://nextjsapiblogfolio-z30xinlwi-csironas-projects.vercel.app/api/projects";
   const [project, setProject] = useState();
 
   const fetchApi = async () => {

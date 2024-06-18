@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 
 export default function APIRequest() {
 
-  const baseURL = "https://grafibook.cl/api/post/";
+  const baseURL = "https://nextjsapiblogfolio-6ytdrdwj5-csironas-projects.vercel.app/api/posts";
   const [posts, setPost] = useState();
 
   const fetchApi = async () => {

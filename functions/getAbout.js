@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 
 export default function GetAbout() {
 
-  const baseURL = "https://nextjsapiblogfolio-z30xinlwi-csironas-projects.vercel.app/api/about";
+  const baseURL = "https://nextjsapiblogfolio.vercel.app/api/about";
   const [posts, setPost] = useState();
 
   const fetchApi = async () => {

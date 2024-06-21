@@ -59,7 +59,7 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params}){
     try{
-        const res = await fetch("https://grafibook.cl/api/post/"+params.id);
+        const res = await fetch("https://nextjsapiblogfolio.vercel.app/api/posts/"+params.id);
         const data = await res.json();
         return {
             props: {

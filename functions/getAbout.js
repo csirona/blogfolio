@@ -1,23 +1,20 @@
 import Link from "next/link";
-import {useState, useEffect} from "react";
-
+import { useState, useEffect } from "react";
 
 export default function GetAbout() {
-
   const baseURL = "https://nextjsapiblogfolio.vercel.app/api/about";
-  const [posts, setPost] = useState();
+  const [post, setPost] = useState(null);
 
   const fetchApi = async () => {
-    const response = await fetch(baseURL)
-    const responseJSON = await response.json()
-    setPost(responseJSON)
+    const response = await fetch(baseURL);
+    const responseJSON = await response.json();
+    setPost(responseJSON);
+  };
 
-
-  }
-  
   useEffect(() => {
-    fetchApi()
-  },[]);
+    fetchApi();
+  }, []);
+
   return (
     <div>
       {!post ? (
@@ -30,5 +27,5 @@ export default function GetAbout() {
         </div>
       )}
     </div>
-  )
+  );
 }

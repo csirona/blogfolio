@@ -43,19 +43,25 @@ export default function Entry({data}) {
     )
 }
 
-export async function getStaticPaths(){
-    try {
-        const res= await fetch('https://grafibook.cl/api/post/');
-        const data = await res.json();
-        const paths = data.map(({id}) => ({params: {id: `${id}`}}));
-        return {
-            paths,
-            fallback: false
-        }
-    } catch(error){
-        console.log(error);
-    };
-};
+export async function getStaticPaths() {
+  try {
+    // Realiza una solicitud a tu API para obtener los datos de los IDs de tus publicaciones
+    const res = await fetch('https://grafibook.cl/api/post/');
+    const data = await res.json();
+    
+    // Mapea los IDs de las publicaciones a los parámetros esperados por Next.js
+    const paths = data.map(post => ({
+      params: { id: post.id.toString() }
+    }));
+
+    // Devuelve el objeto con los paths y fallback
+    return { paths, fallback: false };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return { paths: [], fallback: false };
+  }
+}
+
 
 export async function getStaticProps({params}){
     try{
